@@ -1,6 +1,23 @@
 .navbar {
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(space-between);
   width: 100%;
-  height: 50px;
-  background-color: $primary;
-  @include primary-font(20px, white);
+  height: 70px;
+  background-color: white;
+  @include primary-font(24px, $midnight);
+  border-bottom: 1px solid $secondary-dark;
+}
+
+.nav-logo {
+  padding-left: 20px;
+}
+
+.nav-title {
+  font-weight: 700;
+}
+
+.nav-account {
+  padding-right: 20px;
+  font-size: 18px
 }

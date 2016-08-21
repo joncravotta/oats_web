@@ -1,4 +1,11 @@
 @import "compass/reset",
+"compass/css3/flexbox",
 "colors.scss",
 "fonts.scss",
-"nav.scss";
+"nav.scss",
+"home.scss";
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $secondary;
+}
