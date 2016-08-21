@@ -1,0 +1,14 @@
+{
+  "name": "nighty_oats",
+  "version": "1.0.0",
+  "description": "order overnight oats",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
+}
