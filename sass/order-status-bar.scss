@@ -1,0 +1,29 @@
+.order-status-bar {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(row);
+  width: 100%;
+  margin-top: 35px;
+}
+
+.order-status-active {
+  width: 30px;
+  height: 12px;
+  background-color: $primary;
+  margin: 0 10px;
+  -webkit-transform: skew(-30deg);
+	   -moz-transform: skew(-30deg);
+	     -o-transform: skew(-30deg);
+}
+
+.order-status-inactive {
+  margin: 0 10px;
+  width: 30px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid $primary;
+  -webkit-transform: skew(-30deg);
+	   -moz-transform: skew(-30deg);
+	     -o-transform: skew(-30deg);
+}

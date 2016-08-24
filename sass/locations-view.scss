@@ -1,0 +1,59 @@
+.location-container {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.location-title {
+  @include primary-font(45px, $midnight);
+  padding: 35px 0 25px 0;
+}
+
+.primary-line {
+  height: 3px;
+  width: 20%;
+  background-color: $primary;
+  margin-bottom: 25px;
+}
+
+.location-card {
+  @include display-flex;
+  @include flex-direction(row);
+  @include primary-font(20px, $midnight);
+  width: 50%;
+  background-color: white;
+  //padding: 25px;
+  height: 150px;
+  margin: 15px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.location-card-left {
+  @include display-flex;
+  @include justify-content(center);
+  //@include align-items(center);
+  @include flex-direction(column);
+  padding-left: 10px;
+  width: 70%;
+
+  span {
+    font-style: italic;
+    color: darken($secondary, 10%);
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+.location-card-right {
+  width: 30%;
+  background: url('http://img-aws.ehowcdn.com/560x350p/photos.demandstudios.com/getty/article/142/59/78455950.jpg');
+  background-size: cover;
+  color: white;
+  font: 100px;
+}
