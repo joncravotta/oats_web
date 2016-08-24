@@ -105,7 +105,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: url("./../assets/images/oats.jpg");
   background-size: cover;
 }
@@ -139,7 +139,121 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 1, ../sass/locations-view.scss */
+.location-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 8, ../sass/locations-view.scss */
+.location-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  color: #333;
+  padding: 35px 0 25px 0;
+}
+
+/* line 13, ../sass/locations-view.scss */
+.primary-line {
+  height: 3px;
+  width: 20%;
+  background-color: #6BB387;
+  margin-bottom: 25px;
+}
+
+/* line 20, ../sass/locations-view.scss */
+.location-card {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333;
+  width: 50%;
+  background-color: white;
+  height: 150px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+/* line 31, ../sass/locations-view.scss */
+.location-card:hover {
+  color: #6BB387;
+}
+
+/* line 36, ../sass/locations-view.scss */
+.location-card-left {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 70%;
+}
+/* line 44, ../sass/locations-view.scss */
+.location-card-left span {
+  font-style: italic;
+  color: #e2e2d9;
+  font-weight: normal;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+/* line 53, ../sass/locations-view.scss */
+.location-card-right {
+  width: 30%;
+  background: url("http://img-aws.ehowcdn.com/560x350p/photos.demandstudios.com/getty/article/142/59/78455950.jpg");
+  background-size: cover;
+  color: white;
+  font: 100px;
+}
+
+/* line 1, ../sass/order-status-bar.scss */
+.order-status-bar {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* line 10, ../sass/order-status-bar.scss */
+.order-status-active {
+  width: 30px;
+  height: 12px;
+  background-color: #6BB387;
+  margin: 0 10px;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+
+/* line 20, ../sass/order-status-bar.scss */
+.order-status-inactive {
+  margin: 0 10px;
+  width: 30px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #6BB387;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+
+/* line 9, ../sass/main.scss */
 body {
   width: 100%;
   height: 100%;
