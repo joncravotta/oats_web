@@ -1,5 +1,6 @@
 @mixin primary-font($size, $color) {
-  font-family: 'Roboto', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: $size;
   color: $color;
 }

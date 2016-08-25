@@ -13,7 +13,7 @@ var LocationsView = React.createClass({
    render: function() {
       return (
          <div className="location-container">
-          <h1 className="location-title">Pickup Your Location</h1>
+          <h1 className="location-title">Pick Your Location</h1>
           <div className="primary-line"></div>
           {this.state.locations.map(function(location){
             return (
