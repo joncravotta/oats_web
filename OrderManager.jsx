@@ -1,12 +1,13 @@
 import React from 'react';
 import OrderManagerStatusBar from './OrderManagerStatusBar.jsx';
 import LocationsView from './LocationsView.jsx';
-import GrainView from './GrainView.jsx'
+import GrainView from './GrainView.jsx';
+import ToppingsView from './ToppingsView.jsx';
 
 var OrderManager = React.createClass({
   getInitialState: function() {
     return {
-      orderState: 1
+      orderState: 3
     };
   },
   updateOrderState: function(num){
@@ -16,7 +17,9 @@ var OrderManager = React.createClass({
     if(this.state.orderState == 1){
       return(<LocationsView updateState={this.updateOrderState}/>);
     } else if (this.state.orderState == 2) {
-      return(<GrainView />);
+      return(<GrainView updateState={this.updateOrderState}/>);
+    } else if (this.state.orderState == 3) {
+      return(<ToppingsView updateState={this.updateOrderState}/>);
     }
   },
    render: function() {

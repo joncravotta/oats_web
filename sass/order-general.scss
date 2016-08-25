@@ -1,0 +1,51 @@
+.order-selection-container {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.order-selection-title {
+  @include primary-font(45px, $midnight);
+  padding: 35px 0 25px 0;
+  font-weight: lighter;
+}
+
+.order-selection-card-container {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+}
+
+.order-selection-card {
+  @include primary-font(16px, $midnight);
+  padding: 10px;
+  margin: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// .order-selection-card {
+//   height: 100px;
+//   width: 200px;
+// }
+
+.order-selection-card-top {
+  height: 150px;
+  width: 250px;
+}
+
+.order-selection-card-bottom {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  font-weight: lighter;
+  min-height: 40px;
+  width: 250px;
+  color: white;
+  background-color: $primary;
+}

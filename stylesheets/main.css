@@ -74,23 +74,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   height: 70px;
   background-color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  color: #333;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
   border-bottom: 1px solid #e2e2d9;
 }
 
-/* line 12, ../sass/nav.scss */
+/* line 14, ../sass/nav.scss */
 .nav-logo {
   padding-left: 20px;
 }
 
-/* line 16, ../sass/nav.scss */
+/* line 18, ../sass/nav.scss */
 .nav-title {
   font-weight: 700;
+  font-size: 24px;
+  font-family: 'Roboto', serif;
+  padding-left: 20px;
+  text-align: center;
 }
 
-/* line 20, ../sass/nav.scss */
+/* line 26, ../sass/nav.scss */
 .nav-account {
   padding-right: 20px;
   font-size: 18px;
@@ -129,7 +132,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 150px;
   padding: 10px 0;
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   color: #333;
   text-align: center;
@@ -137,6 +140,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 27, ../sass/home.scss */
 .home-start-order-button:hover {
   cursor: pointer;
+}
+
+/* line 1, ../sass/order-general.scss */
+.order-selection-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 8, ../sass/order-general.scss */
+.order-selection-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 45px;
+  color: #333;
+  padding: 35px 0 25px 0;
+  font-weight: lighter;
+}
+
+/* line 14, ../sass/order-general.scss */
+.order-selection-card-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 22, ../sass/order-general.scss */
+.order-selection-card {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  margin: 20px;
+}
+/* line 27, ../sass/order-general.scss */
+.order-selection-card:hover {
+  cursor: pointer;
+}
+
+/* line 37, ../sass/order-general.scss */
+.order-selection-card-top {
+  height: 150px;
+  width: 250px;
+}
+
+/* line 42, ../sass/order-general.scss */
+.order-selection-card-bottom {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: lighter;
+  min-height: 40px;
+  width: 250px;
+  color: white;
+  background-color: #6BB387;
 }
 
 /* line 1, ../sass/locations-view.scss */
@@ -153,7 +225,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 8, ../sass/locations-view.scss */
 .location-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 45px;
   color: #333;
   padding: 35px 0 25px 0;
@@ -173,7 +245,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 20px;
   color: #333;
   width: 50%;
@@ -253,7 +325,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-transform: skew(-30deg);
 }
 
-/* line 9, ../sass/main.scss */
+/* line 1, ../sass/selected-toppings-bar.scss */
+.selected-toppings-container {
+  width: 100%;
+  background-color: #6BB387;
+  margin-top: 40px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+/* line 9, ../sass/selected-toppings-bar.scss */
+.selected-toppings-card {
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  color: #333;
+  width: 200px;
+  height: 90px;
+  background-color: white;
+  margin: 20px 10px;
+  display: inline-block;
+}
+
+/* line 11, ../sass/main.scss */
 body {
   width: 100%;
   height: 100%;
