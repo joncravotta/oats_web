@@ -28,7 +28,7 @@ var Home = React.createClass({
             <div className="home-start-order-button" onClick={this.updateAppState}>ORDER NOW</div>
             </div>
             <div className="home-landing">
-              <div className="nav-logo"><img src={'./assets/logos/nighty-oats-green-logo.png'} /></div>
+              <div className="nav-logo"><img src={'./assets/logos/nighty_oats.png'} /></div>
             </div>
             <div className="home-cta"></div>
          </div>

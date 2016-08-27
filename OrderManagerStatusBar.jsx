@@ -17,8 +17,9 @@ var OrderManagerStatusBar = React.createClass({
 
    render: function() {
       return (
-         <div>
+         <div className="order-status-bar-container">
            {this.showCurrentTabCount()}
+           <div className="order-status-bar-circle">${this.props.orderTotal}</div>
          </div>
       );
    }

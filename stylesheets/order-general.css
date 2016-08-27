@@ -1,24 +1,22 @@
 /*
-Error: Undefined mixin 'display-flex'.
-        on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss, in `display-flex'
-        from line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss
+Error: Undefined variable: "$accent".
+        on line 4 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss
 
-1: .order-selection-container {
-2:   @include display-flex;
-3:   @include justify-content(center);
-4:   @include align-items(center);
-5:   @include flex-direction(column);
+1: .primary-line {
+2:   height: 3px;
+3:   width: 20%;
+4:   background-color: $accent;
+5:   margin-bottom: 25px;
 6: }
 7: 
+8: @mixin remove-icon($size) {
+9:   @include display-flex(flex);
 
 Backtrace:
-/Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss:2:in `display-flex'
-/Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss:2
-/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss:4
+/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 /Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -68,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'display-flex'.\A         on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss, in `display-flex'\A         from line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss\A \A 1: .order-selection-container {\A 2:   @include display-flex;\A 3:   @include justify-content(center);\A 4:   @include align-items(center);\A 5:   @include flex-direction(column);\A 6: }\A 7: "; }
+  content: "Error: Undefined variable: \"$accent\".\A         on line 4 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-general.scss\A \A 1: .primary-line {\A 2:   height: 3px;\A 3:   width: 20%;\A 4:   background-color: $accent;\A 5:   margin-bottom: 25px;\A 6: }\A 7: \A 8: @mixin remove-icon($size) {\A 9:   @include display-flex(flex);"; }

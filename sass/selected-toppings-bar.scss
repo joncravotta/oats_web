@@ -1,9 +1,15 @@
 .selected-toppings-container {
   width: 100%;
-  background-color: $primary;
+  background-color: $secondary-dark;
   margin-top: 40px;
   overflow-x: scroll;
   white-space: nowrap;
+  float: left;
+}
+
+.selected-toppings-remove {
+  @include remove-icon(25px);
+  float: right;
 }
 
 .selected-toppings-card {
@@ -15,4 +21,11 @@
   background-color: white;
   margin: 20px 10px;
   display: inline-block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  //z-index: 10000;
 }

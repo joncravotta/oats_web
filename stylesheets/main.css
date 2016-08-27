@@ -117,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .home-order-nav {
   width: 100%;
   height: 70px;
-  background-color: #6BB387;
+  background-color: #6DD4E7;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -143,6 +143,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/order-general.scss */
+.primary-line {
+  height: 3px;
+  width: 20%;
+  background-color: #F89070;
+  margin-bottom: 25px;
+}
+
+/* line 24, ../sass/order-general.scss */
 .order-selection-container {
   display: -webkit-flex;
   display: flex;
@@ -154,7 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: column;
 }
 
-/* line 8, ../sass/order-general.scss */
+/* line 31, ../sass/order-general.scss */
 .order-selection-title {
   font-family: 'Roboto Slab', serif;
   font-size: 45px;
@@ -163,7 +171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: lighter;
 }
 
-/* line 14, ../sass/order-general.scss */
+/* line 37, ../sass/order-general.scss */
 .order-selection-card-container {
   display: -webkit-flex;
   display: flex;
@@ -177,7 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-wrap: wrap;
 }
 
-/* line 22, ../sass/order-general.scss */
+/* line 45, ../sass/order-general.scss */
 .order-selection-card {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
@@ -185,30 +193,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   margin: 20px;
 }
-/* line 27, ../sass/order-general.scss */
+/* line 50, ../sass/order-general.scss */
 .order-selection-card:hover {
   cursor: pointer;
 }
+/* line 52, ../sass/order-general.scss */
+.order-selection-card:hover .order-selection-card-bottom {
+  background-color: #83daeb;
+}
 
-/* line 37, ../sass/order-general.scss */
+/* line 63, ../sass/order-general.scss */
 .order-selection-card-top {
   height: 150px;
   width: 250px;
 }
 
-/* line 42, ../sass/order-general.scss */
+/* line 68, ../sass/order-general.scss */
 .order-selection-card-bottom {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-align-items: center;
   align-items: center;
   font-weight: lighter;
   min-height: 40px;
   width: 250px;
   color: white;
-  background-color: #6BB387;
+  background-color: #6DD4E7;
+  border-radius: 0 0 10px 10px;
 }
 
 /* line 1, ../sass/locations-view.scss */
@@ -232,14 +245,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 13, ../sass/locations-view.scss */
-.primary-line {
-  height: 3px;
-  width: 20%;
-  background-color: #6BB387;
-  margin-bottom: 25px;
-}
-
-/* line 20, ../sass/locations-view.scss */
 .location-card {
   display: -webkit-flex;
   display: flex;
@@ -254,12 +259,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 15px 0;
   cursor: pointer;
 }
-/* line 31, ../sass/locations-view.scss */
+/* line 24, ../sass/locations-view.scss */
 .location-card:hover {
-  color: #6BB387;
+  color: #6DD4E7;
 }
 
-/* line 36, ../sass/locations-view.scss */
+/* line 29, ../sass/locations-view.scss */
 .location-card-left {
   display: -webkit-flex;
   display: flex;
@@ -270,7 +275,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 10px;
   width: 70%;
 }
-/* line 44, ../sass/locations-view.scss */
+/* line 37, ../sass/locations-view.scss */
 .location-card-left span {
   font-style: italic;
   color: #e2e2d9;
@@ -279,7 +284,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 10px;
 }
 
-/* line 53, ../sass/locations-view.scss */
+/* line 46, ../sass/locations-view.scss */
 .location-card-right {
   width: 30%;
   background: url("http://img-aws.ehowcdn.com/560x350p/photos.demandstudios.com/getty/article/142/59/78455950.jpg");
@@ -289,7 +294,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/order-status-bar.scss */
+.order-status-bar-container {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #F89070;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* line 11, ../sass/order-status-bar.scss */
 .order-status-bar {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #F89070;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -300,26 +325,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: row;
   width: 100%;
   margin-top: 35px;
+  margin-bottom: 10px;
 }
 
-/* line 10, ../sass/order-status-bar.scss */
+/* line 22, ../sass/order-status-bar.scss */
+.order-status-bar-circle {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12.5px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: #F89070;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* line 19, ../sass/order-general.scss */
+.order-status-bar-circle:hover {
+  background-color: #f9a388;
+}
+
+/* line 26, ../sass/order-status-bar.scss */
 .order-status-active {
   width: 30px;
   height: 12px;
-  background-color: #6BB387;
+  background-color: #6DD4E7;
   margin: 0 10px;
   -webkit-transform: skew(-30deg);
   -moz-transform: skew(-30deg);
   -o-transform: skew(-30deg);
 }
 
-/* line 20, ../sass/order-status-bar.scss */
+/* line 36, ../sass/order-status-bar.scss */
 .order-status-inactive {
   margin: 0 10px;
   width: 30px;
   height: 10px;
   background-color: white;
-  border: 1px solid #6BB387;
+  border: 1px solid #6DD4E7;
   -webkit-transform: skew(-30deg);
   -moz-transform: skew(-30deg);
   -o-transform: skew(-30deg);
@@ -328,13 +376,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/selected-toppings-bar.scss */
 .selected-toppings-container {
   width: 100%;
-  background-color: #6BB387;
+  background-color: #e2e2d9;
   margin-top: 40px;
   overflow-x: scroll;
   white-space: nowrap;
+  float: left;
 }
 
-/* line 9, ../sass/selected-toppings-bar.scss */
+/* line 10, ../sass/selected-toppings-bar.scss */
+.selected-toppings-remove {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 6.25px;
+  color: white;
+  height: 25px;
+  width: 25px;
+  background-color: #F89070;
+  border-radius: 12.5px;
+  cursor: pointer;
+  float: right;
+}
+/* line 19, ../sass/order-general.scss */
+.selected-toppings-remove:hover {
+  background-color: #f9a388;
+}
+
+/* line 15, ../sass/selected-toppings-bar.scss */
 .selected-toppings-card {
   border-radius: 15px;
   padding: 10px;
@@ -346,6 +418,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: white;
   margin: 20px 10px;
   display: inline-block;
+}
+
+/* line 26, ../sass/selected-toppings-bar.scss */
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
 }
 
 /* line 11, ../sass/main.scss */
