@@ -2,6 +2,7 @@ import React from 'react';
 import OrderManagerStatusBar from './OrderManagerStatusBar.jsx';
 import LocationsView from './LocationsView.jsx';
 import GrainView from './GrainView.jsx';
+import MilkView from './MilkView.jsx';
 import ToppingsView from './ToppingsView.jsx';
 
 var OrderManager = React.createClass({
@@ -38,6 +39,8 @@ var OrderManager = React.createClass({
     } else if (this.state.orderState == 2) {
       return(<GrainView updateOrderPrice={this.addOrderPrice} updateState={this.updateOrderState}/>);
     } else if (this.state.orderState == 3) {
+      return(<MilkView updateOrderPrice={this.addOrderPrice} updateState={this.updateOrderState}/>);
+    } else if (this.state.orderState == 4) {
       return(<ToppingsView updateState={this.updateOrderState} addOrderPrice={this.addOrderPrice} subtractOrderPrice={this.subtractOrderPrice} orderTotal={this.state.orderTotalPrice} />);
     }
   },

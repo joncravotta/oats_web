@@ -1,10 +1,10 @@
 /*
-Error: Undefined mixin 'primary-font'.
-        on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss, in `primary-font'
+Error: Undefined mixin 'secondary-font'.
+        on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss, in `secondary-font'
         from line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss
 
 1: .order-status-bar-container {
-2:   @include primary-font(18px, $accent);
+2:   @include secondary-font(12px, $midnight);
 3:   @include display-flex;
 4:   @include justify-content(center);
 5:   @include align-items(center);
@@ -12,7 +12,7 @@ Error: Undefined mixin 'primary-font'.
 7:   width: 100%;
 
 Backtrace:
-/Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss:2:in `primary-font'
+/Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss:2:in `secondary-font'
 /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss:2
 /Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Users/Jon/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'primary-font'.\A         on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss, in `primary-font'\A         from line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss\A \A 1: .order-status-bar-container {\A 2:   @include primary-font(18px, $accent);\A 3:   @include display-flex;\A 4:   @include justify-content(center);\A 5:   @include align-items(center);\A 6:   @include flex-direction(column);\A 7:   width: 100%;"; }
+  content: "Error: Undefined mixin 'secondary-font'.\A         on line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss, in `secondary-font'\A         from line 2 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/order-status-bar.scss\A \A 1: .order-status-bar-container {\A 2:   @include secondary-font(12px, $midnight);\A 3:   @include display-flex;\A 4:   @include justify-content(center);\A 5:   @include align-items(center);\A 6:   @include flex-direction(column);\A 7:   width: 100%;"; }

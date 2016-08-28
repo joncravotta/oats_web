@@ -72,7 +72,7 @@ var ToppingsView = React.createClass({
     };
   },
   updateOrderState: function() {
-    this.props.updateState(3);
+    this.props.updateState(5);
   },
   addTopping: function(grain) {
     var newArray = this.state.selectedToppings;

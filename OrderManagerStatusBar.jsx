@@ -6,7 +6,7 @@ var OrderManagerStatusBar = React.createClass({
     var x = 0;
     for (var i = 0; i < 5; i++) {
       if (i < this.props.currentOrderState){
-          tabIdentifiers.push(<div key={i} className="order-status-active"></div>);
+          tabIdentifiers.push(<div key={i} className="order-status-active"><span>Some content</span></div>);
         } else {
           tabIdentifiers.push(<div key={i} className="order-status-inactive"></div>);
         }

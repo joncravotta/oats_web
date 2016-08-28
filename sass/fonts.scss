@@ -4,3 +4,9 @@
   font-size: $size;
   color: $color;
 }
+
+@mixin secondary-font($size, $color) {
+  font-family: 'Roboto', serif;
+  font-size: $size;
+  color: $color;
+}
