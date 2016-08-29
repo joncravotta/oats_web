@@ -1,11 +1,11 @@
 /*
-Error: Undefined variable: "$secondary-dark".
+Error: Undefined variable: "$secondary".
         on line 3 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/selected-toppings-bar.scss
 
 1: .selected-toppings-container {
 2:   width: 100%;
-3:   background-color: $secondary-dark;
-4:   margin-top: 40px;
+3:   background-color: $secondary;
+4:   //margin-top: 40px;
 5:   overflow-x: scroll;
 6:   white-space: nowrap;
 7:   float: left;
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary-dark\".\A         on line 3 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/selected-toppings-bar.scss\A \A 1: .selected-toppings-container {\A 2:   width: 100%;\A 3:   background-color: $secondary-dark;\A 4:   margin-top: 40px;\A 5:   overflow-x: scroll;\A 6:   white-space: nowrap;\A 7:   float: left;\A 8: }"; }
+  content: "Error: Undefined variable: \"$secondary\".\A         on line 3 of /Users/Jon/Desktop/Home/nighty_oats/nighty_oats_web/sass/selected-toppings-bar.scss\A \A 1: .selected-toppings-container {\A 2:   width: 100%;\A 3:   background-color: $secondary;\A 4:   //margin-top: 40px;\A 5:   overflow-x: scroll;\A 6:   white-space: nowrap;\A 7:   float: left;\A 8: }"; }

@@ -36,6 +36,7 @@ var MilkView = React.createClass({
   updateOrderState: function(milk) {
     console.log("Milk " + milk.price)
     this.props.updateOrderPrice(milk.price);
+    this.props.updateMilkState(milk.name);
     this.props.updateState(4);
   },
    render: function() {

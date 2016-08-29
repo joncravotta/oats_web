@@ -1,5 +1,5 @@
 .order-status-bar-container {
-  @include secondary-font(12px, $midnight);
+  @include secondary-font(16px, $midnight);
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
@@ -10,33 +10,41 @@
 
 .order-status-bar {
   @include display-flex;
-  @include justify-content(center);
+  @include justify-content(flex-start);
   @include align-items(center);
   @include flex-direction(row);
   width: 100%;
   //margin-top: 35px;
-  margin-bottom: 10px;
+  //margin-bottom: 10px;
 }
 
-.order-status-bar-circle {
-  @include remove-icon(50px);
-}
-
-.order-status-active {
-  padding: 15px 0;
+.order-status-bar-tab {
+  height: 50px;
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
   @include flex-direction(row);
   width: 20%;
+  color: white;
   //height: 32px;
+  background-color: $accent;
+}
 
-  background-color: $secondary-dark;
-  border-right: 2px solid white;
-//  margin: 0 0px;
-  // -webkit-transform: skew(-30deg);
-	//    -moz-transform: skew(-30deg);
-	//      -o-transform: skew(-30deg);
+.order-status-active {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(row);
+  border-bottom: 2px solid $accent;
+  width: 20%;
+  height: 50px;
+  border-right: 1px solid $secondary;
+  background-color: white;
+  color: $midnight;
+
+  img {
+    width: 15px;
+  }
 }
 
 .order-status-inactive {
@@ -45,9 +53,9 @@
   @include align-items(center);
   @include flex-direction(row);
   width: 20%;
-  height: 32px;
+  height: 50px;
 
-  background-color: $secondary;
+  background-color: lighten($secondary-dark, 5%);
   border-right: 2px solid white;
 //  margin: 0 0px;
   // -webkit-transform: skew(-30deg);

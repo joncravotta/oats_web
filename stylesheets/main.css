@@ -146,7 +146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .primary-line {
   height: 3px;
   width: 20%;
-  background-color: #F89070;
+  background-color: #6DD4E7;
   margin-bottom: 25px;
 }
 
@@ -183,9 +183,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-/* line 45, ../sass/order-general.scss */
+/* line 46, ../sass/order-general.scss */
 .order-selection-card {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
@@ -193,22 +194,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   margin: 20px;
 }
-/* line 50, ../sass/order-general.scss */
+/* line 51, ../sass/order-general.scss */
 .order-selection-card:hover {
   cursor: pointer;
 }
-/* line 52, ../sass/order-general.scss */
+/* line 53, ../sass/order-general.scss */
 .order-selection-card:hover .order-selection-card-bottom {
   background-color: #83daeb;
 }
 
-/* line 63, ../sass/order-general.scss */
+/* line 64, ../sass/order-general.scss */
 .order-selection-card-top {
   height: 150px;
   width: 250px;
 }
 
-/* line 68, ../sass/order-general.scss */
+/* line 69, ../sass/order-general.scss */
 .order-selection-card-bottom {
   display: -webkit-flex;
   display: flex;
@@ -222,6 +223,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: white;
   background-color: #6DD4E7;
   border-radius: 0 0 10px 10px;
+}
+
+/* line 81, ../sass/order-general.scss */
+.order-selection-submit-button {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: #F89070;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* line 96, ../sass/order-general.scss */
+.order-selection-submit-button:hover {
+  background-color: #f99b7f;
 }
 
 /* line 1, ../sass/locations-view.scss */
@@ -296,7 +323,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/order-status-bar.scss */
 .order-status-bar-container {
   font-family: 'Roboto', serif;
-  font-size: 12px;
+  font-size: 16px;
   color: #333;
   display: -webkit-flex;
   display: flex;
@@ -313,41 +340,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .order-status-bar {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   align-items: center;
   -webkit-flex-direction: row;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 10px;
 }
 
 /* line 21, ../sass/order-status-bar.scss */
-.order-status-bar-circle {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  font-family: 'Roboto Slab', serif;
-  font-size: 12.5px;
-  color: white;
+.order-status-bar-tab {
   height: 50px;
-  width: 50px;
-  background-color: #F89070;
-  border-radius: 25px;
-  cursor: pointer;
-}
-/* line 19, ../sass/order-general.scss */
-.order-status-bar-circle:hover {
-  background-color: #f9a388;
-}
-
-/* line 25, ../sass/order-status-bar.scss */
-.order-status-active {
-  padding: 15px 0;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -357,11 +361,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-flex-direction: row;
   flex-direction: row;
   width: 20%;
-  background-color: #e2e2d9;
-  border-right: 2px solid white;
+  color: white;
+  background-color: #F89070;
 }
 
-/* line 42, ../sass/order-status-bar.scss */
+/* line 33, ../sass/order-status-bar.scss */
+.order-status-active {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 2px solid #F89070;
+  width: 20%;
+  height: 50px;
+  border-right: 1px solid #f8f8f6;
+  background-color: white;
+  color: #333;
+}
+/* line 45, ../sass/order-status-bar.scss */
+.order-status-active img {
+  width: 15px;
+}
+
+/* line 50, ../sass/order-status-bar.scss */
 .order-status-inactive {
   display: -webkit-flex;
   display: flex;
@@ -372,16 +398,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-flex-direction: row;
   flex-direction: row;
   width: 20%;
-  height: 32px;
-  background-color: #f8f8f6;
+  height: 50px;
+  background-color: #edede8;
   border-right: 2px solid white;
 }
 
 /* line 1, ../sass/selected-toppings-bar.scss */
 .selected-toppings-container {
   width: 100%;
-  background-color: #e2e2d9;
-  margin-top: 40px;
+  background-color: #f8f8f6;
   overflow-x: scroll;
   white-space: nowrap;
   float: left;
@@ -431,7 +456,118 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 0;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 1, ../sass/submit-order.scss */
+.submit-order-container {
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  color: #333;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* line 9, ../sass/submit-order.scss */
+.submit-order-card {
+  background-color: white;
+  width: 40%;
+  border: 1px solid #e2e2d9;
+}
+
+/* line 15, ../sass/submit-order.scss */
+.submit-order-card-row, .submit-order-card-row-button, .submit-order-card-row-toppings {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e2d9;
+}
+
+/* line 23, ../sass/submit-order.scss */
+.submit-order-card-cell-left {
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+/* line 28, ../sass/submit-order.scss */
+.submit-order-card-cell-right {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: lighter;
+  margin-right: 25px;
+}
+
+/* line 34, ../sass/submit-order.scss */
+.submit-order-card-row-button {
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #6DD4E7;
+  color: white;
+  cursor: pointer;
+}
+/* line 41, ../sass/submit-order.scss */
+.submit-order-card-row-button:hover {
+  background-color: #83daeb;
+}
+
+/* line 46, ../sass/submit-order.scss */
+.submit-order-card-row-toppings-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 51, ../sass/submit-order.scss */
+.submit-order-cell-toppings-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #f8f8f6;
+  border-bottom: 1px solid #f8f8f6;
+  display: none;
+}
+
+/* line 69, ../sass/submit-order.scss */
+.submit-order-card-cell-dropdown {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 6.25px;
+  color: white;
+  height: 25px;
+  width: 25px;
+  background-color: #F89070;
+  border-radius: 12.5px;
+  cursor: pointer;
+  font-size: 15px;
+  float: right;
+}
+/* line 19, ../sass/order-general.scss */
+.submit-order-card-cell-dropdown:hover {
+  background-color: #f9a388;
+}
+
+/* line 13, ../sass/main.scss */
 body {
   width: 100%;
   height: 100%;

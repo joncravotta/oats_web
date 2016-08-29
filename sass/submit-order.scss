@@ -1,0 +1,73 @@
+.submit-order-container {
+  @include secondary-font(16px, $midnight);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+  width: 100%;
+}
+.submit-order-card {
+  background-color: white;
+  width: 40%;
+  border: 1px solid $secondary-dark;
+}
+
+.submit-order-card-row {
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  padding: 20px 0;
+  border-bottom: 1px solid $secondary-dark;
+}
+
+.submit-order-card-cell-left {
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.submit-order-card-cell-right {
+  @include primary-font(16px, $midnight);
+  font-weight: lighter;
+  margin-right: 25px;
+}
+
+.submit-order-card-row-button {
+  @extend .submit-order-card-row;
+  @include justify-content(center);
+  background-color: $primary;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary, 5%);
+  }
+}
+
+.submit-order-card-row-toppings-container {
+  @include display-flex;
+  @include flex-direction(column);
+}
+
+.submit-order-cell-toppings-container {
+  @include display-flex;
+  @include justify-content(space-around);
+  //@include align-items(center);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  width: 100%;
+  background-color: $secondary;
+  //margin: 15px 0;
+  border-bottom: 1px solid $secondary;
+  display: none;
+}
+
+
+.submit-order-card-row-toppings {
+  @extend .submit-order-card-row;
+}
+
+.submit-order-card-cell-dropdown {
+  @include remove-icon(25px);
+  font-size: 15px;
+  float: right;
+}

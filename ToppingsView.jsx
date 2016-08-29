@@ -72,6 +72,7 @@ var ToppingsView = React.createClass({
     };
   },
   updateOrderState: function() {
+    this.props.updateToppings(this.state.selectedToppings);
     this.props.updateState(5);
   },
   addTopping: function(grain) {
@@ -91,9 +92,9 @@ var ToppingsView = React.createClass({
      console.log(this.state.selectedToppings);
       return (
          <div className="order-selection-container">
+         <SelectedToppingsBar toppings={this.state.selectedToppings} removeTopping={this.removeTopping}/>
           <h1 className="order-selection-title">Pick your toppings</h1>
           <div className="primary-line"></div>
-          <SelectedToppingsBar toppings={this.state.selectedToppings} removeTopping={this.removeTopping}/>
            <div className="order-selection-card-container">
               {this.state.toppings.map(function(topping, i){
                 var divStyle = {
@@ -111,6 +112,7 @@ var ToppingsView = React.createClass({
                 );
               }.bind(this))}
             </div>
+          <div className="order-selection-submit-button" onClick={this.updateOrderState}>Submit Toppings</div>
          </div>
       );
    }

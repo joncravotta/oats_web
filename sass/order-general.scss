@@ -1,7 +1,7 @@
 .primary-line {
   height: 3px;
   width: 20%;
-  background-color: $accent;
+  background-color: $primary;
   margin-bottom: 25px;
 }
 
@@ -40,6 +40,7 @@
   @include align-items(center);
   @include flex-direction(row);
   @include flex-wrap(wrap);
+  margin-bottom: 50px;
 }
 
 .order-selection-card {
@@ -75,4 +76,24 @@
   color: white;
   background-color: $primary;
   border-radius: 0 0 10px 10px;
+}
+
+.order-selection-submit-button {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include secondary-font(16px, white);
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: $accent;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: lighten($accent, 3%);
+  }
 }

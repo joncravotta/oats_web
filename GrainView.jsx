@@ -26,6 +26,7 @@ var GrainView = React.createClass({
   updateOrderState: function(grain) {
     console.log("grain " + grain.price)
     this.props.updateOrderPrice(grain.price);
+    this.props.updateOatState(grain.name)
     this.props.updateState(3);
   },
    render: function() {
