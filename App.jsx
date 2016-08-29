@@ -6,7 +6,7 @@ import OrderManager from './OrderManager.jsx'
 var App = React.createClass({
   getInitialState: function() {
     return {
-      appState: 2
+      appState: 1
     };
   },
   updateAppState: function(num) {
